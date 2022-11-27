@@ -27,6 +27,20 @@ function App() {
     setTodos(filtered);
   };
 
+  const changeCompleted = (i) => {
+    setTodos(
+      todos.map((item, index) => {
+        if (i === index) {
+          return {
+            ...item,
+            completed: !item.completed,
+          };
+        }
+        return item;
+      })
+    );
+  };
+
   const newTodos = todos.map((todo, index) => {
     const todoClass = todo.completed ? "completed" : "list";
 
@@ -37,6 +51,7 @@ function App() {
             className="checkBox"
             type="checkBox"
             checked={todo.completed}
+            onChange={() => changeCompleted(index)}
           />
         </div>
         <div className="list-text">{todo.text}</div>
