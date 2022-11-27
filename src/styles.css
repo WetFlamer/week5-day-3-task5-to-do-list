@@ -1,0 +1,107 @@
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+.main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.buttonAdd {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 12px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #fe6637;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .buttonAdd:before {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.5)
+    );
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: 5075px;
+    transform: skewX(-45deg);
+  }
+  .buttonAdd:hover {
+    background: #fe6637;
+    color: #fff;
+  }
+  .buttonAdd:hover:before {
+    left: 150px;
+    transition: 0.5s ease-in-out;
+  }
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 40px;
+    margin-top: 10px;
+    border-color: #fe6637;
+}
+.list-1 {
+    margin: auto;
+    overflow: auto;
+    width: 400px;
+    height: 600px;
+}
+.list {
+    display: flex;
+    margin-top: 30px;
+    width: 374.22px;
+    height: 84.2px;
+    background: #ffffff;
+    box-shadow: 0px 0px 9.35556px #e6e6e6;
+    border-radius: 11.6944px;
+
+}
+.list-text {
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 300px;
+    font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18.7111px;
+      /* identical to box height */
+    
+      color: #0f0e17;
+}
+.buttonDel {
+    border: 0px;
+    background: white;
+    width: 21px;
+    height: 21px;
+    margin-top: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/delete.png);
+    background-color: transparent;
+    cursor: pointer;
+}
+.checkBox {
+    margin-top: 30px;
+}
+.completed {
+    display: flex;
+    margin-top: 30px;
+    width: 374.22px;
+    height: 84.2px;
+    text-decoration: line-through;
+      background: #9b9999;
+    box-shadow: 0px 0px 9.35556px #e6e6e6;
+    border-radius: 11.6944px;
+}
